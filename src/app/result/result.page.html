@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-toolbar  color="primary">
+      <ion-title>
+        <img routerLink='/login' alt="logo" height="35px" width="35px"  src="assets\basketball-player-scoring (2).png" /> 
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-card-title text-center>Results </ion-card-title>
+  
+  <ion-content color="primary">
+    
+      
+     <ion-card style="background-color:white;" > 
+       
+        <ion-card-content>    
+   
+     <p style=" font-size: 60px;">Completed <ion-icon style="zoom:2;" name="trophy"></ion-icon> </p><br/>
+     
+     <p style=" font-size: 20px;">Score: {{score}}/5 </p><br/>
+    </ion-card-content> 
+    </ion-card>
+  
+    <ion-button  routerLink='/home' color="primary"><ion-icon style="zoom:1.5;" name="basketball"></ion-icon></ion-button>
+  </ion-content>
+
+  <!-- (click)="saveScore(score)" -->

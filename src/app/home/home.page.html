@@ -1,0 +1,45 @@
+<ion-header>
+    <ion-toolbar  color="primary">
+      <ion-title>
+        <img routerLink='/login' alt="logo" height="35px" width="35px"  src="assets\basketball-player-scoring (2).png" /> 
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    
+      
+     <ion-card > 
+       <ion-card-title color="primary" text-center>Welcome To Ball Quiz </ion-card-title>
+
+       <ion-card-content >
+        <!--Start Quiz  -->
+        
+        <ion-card (click)="getCat()" routerLink='/players' class="app-card1" style="height:250px;width:300px;">
+          
+            <div>
+                <ion-card-content  >
+                    <span style="color:white;"><ion-icon style="zoom:2;" name="play"></ion-icon></span>
+                  <p>Start Quiz</p>
+                </ion-card-content>
+          </div>
+         </ion-card>
+        <br/>
+
+         <!-- View Results -->
+         <ion-card routerLink='/result' class="app-card2" style="height:250px;width:300px;">
+            <div>
+              
+              <ion-card-content >
+                  <span style="color:white;"><ion-icon style="zoom:2;" name="eye"></ion-icon></span>
+              <p >View Results</p>
+              </ion-card-content>
+        </div>
+         </ion-card>
+        
+      </ion-card-content>
+
+     
+    </ion-card>
+    <ion-button (click)="logout()" routerLink='/login' color="primary"><ion-icon style="zoom:1.5;" name="power"></ion-icon></ion-button>
+  </ion-content>

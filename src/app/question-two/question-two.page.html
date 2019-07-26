@@ -1,0 +1,49 @@
+<ion-header>
+    <ion-toolbar  color="primary">
+      <ion-title>
+        <img routerLink='/home' alt="logo" height="35px" width="35px"  src="assets\basketball-player-scoring (2).png" /> 
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content >
+    <p style=" font-size: 20px;">Question Two</p>
+   
+    <ion-card *ngFor="let ques of question">
+      <div>
+          <ion-card-content  >
+            <p> {{ques.theQuestion}} </p>
+             <!-- Answer one-->
+<ion-list >
+  <ion-item>
+    <ion-radio-group (ionChange)="getAnswerOne($event)" >
+        <ion-list-header>
+      <ion-label color="primary">Answer</ion-label>
+        </ion-list-header>
+
+        <ion-item>
+          <ion-label color="secondary">{{ques.theAnswer}}</ion-label>
+          <ion-radio slot="start" value="{{ques.theAnswer}}" ></ion-radio>
+        </ion-item>
+
+        <ion-item>
+            <ion-label color="secondary" >{{ques.fake2}}</ion-label>
+            <ion-radio  slot="start" value="{{ques.fake2}}"  ></ion-radio>
+        </ion-item>
+
+        <ion-item>
+              <ion-label color="secondary">{{ques.fake1}}</ion-label>
+              <ion-radio   slot="start" value="{{ques.fake1}}"  ></ion-radio>
+        </ion-item>
+
+        </ion-radio-group>
+    </ion-item>
+
+  </ion-list>
+          </ion-card-content>
+    </div>
+    <ion-button (click)="quest3();score(answerTwo,ques.theAnswer)"routerLink='/question-three' color="primary"><ion-icon style="zoom:1.7;" name="arrow-round-forward"></ion-icon></ion-button>
+   </ion-card>
+    
+   
+  </ion-content>

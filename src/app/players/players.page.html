@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar  color="primary">
+    <ion-title>
+      <img routerLink='/home' alt="logo" height="35px" width="35px"  src="assets\basketball-player-scoring (2).png" /> 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- main -->
+   <ion-card > 
+     <ion-card-title color="primary" text-center> Choose Your Player </ion-card-title>
+
+     <ion-card-content  >
+ 
+      <!-- list -->
+      
+      <ion-list  *ngFor="let play of playerss">
+     
+      <!--player  -->
+    
+      <ion-card (click)="sendPerson(play.name)"  routerLink='/question-one' class="app-card1" style="height:250px;width:300px;">
+       
+        <div [ngStyle]="{'background-image':'url('+play.photoUrl+')'}" >
+        
+              <ion-card-content  >
+                  <span style="color:white;"><ion-icon style="zoom:2;" name="basketball"></ion-icon></span>
+                <p>{{play.name}}</p>
+                
+              </ion-card-content>
+        </div>
+       </ion-card>
+     
+     
+    
+      </ion-list>
+      <br/>
+    
+            
+  </ion-card-content >
+    
+</ion-card> 
+   
+ 
+  <ion-button (click)="logout()" routerLink='/login' color="primary"><ion-icon style="zoom:1.5;" name="power"></ion-icon></ion-button>
+
+</ion-content>
