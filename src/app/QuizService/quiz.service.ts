@@ -871,9 +871,9 @@ root2Ref.once("value", snap =>{
 score(answer,theAnswer)
 {
   if(answer==theAnswer)
-  
+  {
   this.finalscore+=1
-      
+  }
 }
 
 

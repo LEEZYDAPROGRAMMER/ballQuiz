@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { AlertController } from '@ionic/angular';
+import { AlertController, ToastController } from '@ionic/angular';
 import { UserServiceService } from '../UserService/user-service.service';
+import { Router } from '@angular/router';
+import { FormBuilder, Validators } from '@angular/forms';
+import {FormControl,FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -10,10 +13,22 @@ import { UserServiceService } from '../UserService/user-service.service';
 export class LoginPage implements OnInit {
 
   email
-password
-  constructor(public user:UserServiceService, public alertController: AlertController ) { }
+ password
+passForm
+  constructor(public user:UserServiceService, public alertController: AlertController ,public toastController: ToastController,public route: Router,formBuilder : FormBuilder) 
+  { 
+    this.passForm=formBuilder.group(
+    {
+          
+          email: ['',Validators.required],
+          password: ['',Validators.required]
+         
+     });
+    }
  
   
+
+
   async resetPassword() {
     const alert = await this.alertController.create({
       header: 'Email',
@@ -52,8 +67,25 @@ password
 
   login()
   {
+    console.log(this.email)
+   this.user.login(this.email,this.password).then((result)=>{
+           
+    if(result.operationType=="signIn")
+    {
+         
+    this.route.navigate(['/home'])
+       this.presentToast()
+        
+    }
+    else
+    {
 
-   this.user.login(this.email,this.password)
+          this.presentAlert(result)
+
+    }
+      })
+
+ 
    
    this.email=null;
    this.password=null;
@@ -64,7 +96,30 @@ password
     this.user.logout()
   }
 
-  ngOnInit() {
+  ngOnInit() 
+  {
+
   }
+ //user error
+ async presentAlert(data) {
+  const alert = await this.alertController.create({
+    header: 'Bad Credentials',
+    subHeader: 'Error',
+    message:  data,
+    buttons: ['OK']
+  });
+
+  await alert.present();
+}
+
+//user registered msg
+async presentToast() {
+  const toast = await this.toastController.create({
+    message: 'You have successfully logged in',
+    duration: 2000,
+    color: "primary"
+  });
+  toast.present();
+}
 
 }

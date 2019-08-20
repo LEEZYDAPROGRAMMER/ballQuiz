@@ -1,0 +1,145 @@
+{
+  "players" : {
+    "player1" : {
+      "name" : "james",
+      "photoUrl" : "https://static4.businessinsider.com/image/5d1fc363a17d6c01fc5102c3-1257/lebron-james.jpg"
+    },
+    "player2" : {
+      "name" : "curry",
+      "photoUrl" : "https://cdn-s3.si.com/s3fs-public/styles/marquee_large_2x/public/2019/05/23/stephen-curry-warriors-nba-playoffs-sweep.jpg?itok=_03Ou9Mo"
+    },
+    "player3" : {
+      "name" : "kawhi",
+      "photoUrl" : "https://fadeawayworld.net/wp-content/uploads/2019/07/KawhiLeonard-2.jpg"
+    }
+  },
+  "questions" : {
+    "cquestion1" : {
+      "options" : {
+        "fake1" : "beyonce",
+        "fake2" : "alicia"
+      },
+      "theAnswer" : "ayesha",
+      "theQuestion" : "Name the name of Stephen Currys wife?"
+    },
+    "cquestion2" : {
+      "options" : {
+        "fake1" : "forward",
+        "fake2" : "center"
+      },
+      "theAnswer" : "guard",
+      "theQuestion" : "Which position does Stephen Curry play?"
+    },
+    "cquestion3" : {
+      "options" : {
+        "fake1" : "durban",
+        "fake2" : "toronto"
+      },
+      "theAnswer" : "akron",
+      "theQuestion" : "What is the name of Currys hometown?"
+    },
+    "cquestion4" : {
+      "options" : {
+        "fake1" : "lakers",
+        "fake2" : "knicks"
+      },
+      "theAnswer" : "warriors",
+      "theQuestion" : "Stephen Curry only played for one team in the NBA, which team is that?"
+    },
+    "cquestion5" : {
+      "options" : {
+        "fake1" : 2019,
+        "fake2" : 2010
+      },
+      "theAnswer" : 2015,
+      "theQuestion" : "Which year did Curry win his first NBA Championship"
+    },
+    "jquestion1" : {
+      "options" : {
+        "fake1" : "raptors",
+        "fake2" : "clippers"
+      },
+      "theAnswer" : "lakers",
+      "theQuestion" : "Which team does Lebron James play for ?"
+    },
+    "jquestion2" : {
+      "options" : {
+        "fake1" : "adidas",
+        "fake2" : "puma"
+      },
+      "theAnswer" : "nike",
+      "theQuestion" : "Which sports brand sponsors Lebron James ?"
+    },
+    "jquestion3" : {
+      "options" : {
+        "fake1" : "la",
+        "fake2" : "boston"
+      },
+      "theAnswer" : "akron",
+      "theQuestion" : "What is the name of Lebrons hometown?"
+    },
+    "jquestion4" : {
+      "options" : {
+        "fake1" : "7th",
+        "fake2" : "4th"
+      },
+      "theAnswer" : "1st",
+      "theQuestion" : "Lebron was drafted in 2003,what was his overall pick?"
+    },
+    "jquestion5" : {
+      "options" : {
+        "fake1" : "defense",
+        "fake2" : "center"
+      },
+      "theAnswer" : "forward",
+      "theQuestion" : "what is Lebron James position?"
+    },
+    "kquestion1" : {
+      "options" : {
+        "fake1" : "london",
+        "fake2" : "chicago"
+      },
+      "theAnswer" : "la",
+      "theQuestion" : "what is Kawhi leonards hometown"
+    },
+    "kquestion2" : {
+      "options" : {
+        "fake1" : "clippers",
+        "fake2" : "pacers"
+      },
+      "theAnswer" : "raptors",
+      "theQuestion" : "What is kawhi second NBA team?"
+    },
+    "kquestion3" : {
+      "options" : {
+        "fake1" : "center",
+        "fake2" : "goalkeeper"
+      },
+      "theAnswer" : "forward",
+      "theQuestion" : "Which position does Kawhi play in?"
+    },
+    "kquestion4" : {
+      "options" : {
+        "fake1" : 3,
+        "fake2" : 5
+      },
+      "theAnswer" : 7,
+      "theQuestion" : "How many seasons did kawhi spend with the San Antonio Spurs?"
+    },
+    "kquestion5" : {
+      "options" : {
+        "fake1" : 1985,
+        "fake2" : 1982
+      },
+      "theAnswer" : 1991,
+      "theQuestion" : "Which year was Kawhi born"
+    }
+  },
+  "users" : {
+    "QmnhCTX0XdWLGR6y7PiyBBXpVf53" : {
+      "email" : "coolgeeqworld@gmail.com",
+      "password" : "Fire12345",
+      "username" : "cool"
+    }
+  }
+}

@@ -9,14 +9,14 @@ import { QuizService } from '../QuizService/quiz.service';
 export class QuestionOnePage implements OnInit {
    answerOne
    
-   question=[]
+   question
   constructor(public quiz:QuizService) {
     this.question=[]
      this.question=quiz.retQuestion()
 
    }
 
-  ngOnInit() {
+  ngOnInit() {   
   }
 //
 getAnswerOne(event)
